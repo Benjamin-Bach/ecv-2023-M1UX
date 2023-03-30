@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/js/app.js" defer></script>
+    <title>Code&lt;&sol;&gt;Paper</title> <!-- cf: https://html.com/character-codes/ -->
+</head>
+<body>
+
+    <!-- Main part -->
+    <main>
+
+        <!-- Main menu -->
+        <nav class="main-menu close">
+            <div class="toggle-menu"></div>
+            <ul class="content-wrapper">
+                <li><a href="components.html">Composants graphiques</a></li>
+                <li><a href="#">Lien 2</a></li>
+                <li><a href="#">Lien 3</a></li>
+                <li><a href="#">Lien 4</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section hero -->
+        <section class="hero-image">
+            
+            <!-- Responsive image -->
+            <picture class="media-background">
+                <source srcset="assets/images/hero-w1800.jpg" media="(min-width:1201px)">
+                <source srcset="assets/images/hero-w1200.jpg" media="(min-width:481px)">
+                <img src="assets/images/hero-w480.jpg" alt="Paper Code">
+            </picture>
+
+            <!-- Text overlay -->
+            <div class="content-wrapper">
+
+                <article class="text-overlay text-bottom p-2">
+                    <h1 class="color-secondary">Code<span>&lt;&sol;&gt;</span>Paper</h1>
+                    <a href="#">S'abonner</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+            </div>
+
+        </section>
+
+        <!-- Section Intro -->
+        <section class="content-wrapper p-2">
+            <h2>Des articles de qualité, chaque mois.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium expedita quae, in tenetur nesciunt sapiente eveniet quos nihil quod unde maiores natus eum facere ratione fugiat sed explicabo cumque.</p>
+        </section>
+
+        <!-- Section Form -->
+        <section class="content-wrapper p-2">
+            <input id="choice" type="checkbox"/><label>M'abonner au format digital uniquement</label>
+            <article class="form-1">
+                <form id="mainForm" action="https://duckduckgo.com">
+
+                    <!-- First name -->
+                    <div>
+                        <label>Prénom</label>
+                        <input type="text" name="q" placeholder="Votre prénom">
+                    </div>
+
+                    <!-- Last name -->
+                    <div>
+                        <label>Nom</label>    
+                        <input type="text" name="LastName" placeholder="Votre nom">
+                    </div>
+
+                    <!-- Mail -->
+                    <div>    
+                        <label>e-Mail</label>
+                        <input type="email" name="LastName" placeholder="Votre e-mail">
+                    </div>
+
+                    <!-- Adresse -->
+                    <div>
+                        <label>Adresse</label>
+                        <input type="text" name="address" placeholder="Votre adresse">
+                    </div>
+
+                    <!-- Last name -->
+                    <div>
+                        <label>Code postal</label>
+                        <input type="number" min="0" max="99999" step="1" name="postal-code" placeholder="Votre code postal">
+                    </div>
+
+                    <!-- Last name -->
+                    <div>
+                        <label>Ville</label>
+                        <input type="text" name="city" placeholder="Votre ville">
+                    </div>
+
+                    <!-- Legals -->
+                    <div>
+                        <input type="checkbox" name="legals" id="legals">
+                        <label for="legals">J'ai lu et j'accepte les mentions légales</label>
+                    </div>
+
+                    <!-- Actions -->
+                    <div>
+                        <button type="submit" formaction="other-url">Partager</button>
+                        <button type="submit">S'abonner</button>
+                    </div>
+
+                </form>
+            </article>
+            <article class="form-2">
+                <form id="otherForm" action="https://duckduckgo.com">
+            
+                    <!-- First name -->
+                    <div>
+                        <label>Prénom</label>
+                        <input type="text" name="q" placeholder="Votre prénom">
+                    </div>
+            
+                    <!-- Last name -->
+                    <div>
+                        <label>Nom</label>
+                        <input type="text" name="LastName" placeholder="Votre nom">
+                    </div>
+            
+                    <!-- Mail -->
+                    <div>
+                        <label>e-Mail</label>
+                        <input type="email" name="LastName" placeholder="Votre e-mail">
+                    </div>
+            
+                    <!-- Legals -->
+                    <div>
+                        <input type="checkbox" name="legals" id="legals">
+                        <label for="legals">J'ai lu et j'accepte les mentions légales</label>
+                    </div>
+            
+                    <!-- Actions -->
+                    <div>
+                        <button type="submit" formaction="other-url">Partager</button>
+                        <button type="submit">S'abonner</button>
+                    </div>
+            
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark p-2">
+
+        <!-- Socials menu -->
+        <ul class="content-wrapper">
+            <li><a href="#"><img src="assets/images/facebook.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="assets/images/twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="assets/images/instagram.svg" alt="instagram"></a></li>
+        </ul>
+
+        <!-- Legal menu -->
+        <ul class="content-wrapper">
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </footer>
+    
+</body>
+</html>

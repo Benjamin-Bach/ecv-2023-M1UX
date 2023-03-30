@@ -1,0 +1,12 @@
+@import url('_variables.css');
+@import url('_colors.css');
+@import url('_images.css');
+@import url('_typo.css');
+@import url('_flex.css');
+@import url('_menu.css');
+@import url('_space.css');
+@import url('_form.css');
+
+*{
+    box-sizing: border-box;
+}

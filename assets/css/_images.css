@@ -1,0 +1,39 @@
+/* Force les images responsives */
+
+img{
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+/* 
+    Images de type "hero"
+    Avec incrustation de HTML par-dessus 
+*/
+
+.hero-image{
+    position: relative;
+}
+
+.hero-image img{
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    object-position: 0 40%;
+}
+
+.hero-image .text-overlay{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-image .text-overlay.text-bottom{
+    top: unset;
+    bottom: calc(var(--unit) * 2);
+    transform: unset;
+}
+
+.hero-image .text-overlay.text-bottom :last-child{
+    margin-bottom: 0;
+}

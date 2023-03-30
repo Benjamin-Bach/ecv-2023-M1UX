@@ -1,0 +1,91 @@
+/*
+    Importer une fonte variable depuis Google
+    Attention aux deux points à la place du point virgule :
+    ; -> ..
+    (Permet d'utiliser tout le spectre variable d'une font et non seulement
+    deux graisses par exemple)
+*/
+
+/* 
+
+Tips : Utilisez des rem pour les font-size, vous aurez moins de surprises et plus de contrôle.
+Utilisez par contre des em pour les margins des fonts, qui seront toujours calculés en fonction de la taille de la font elle-même
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html{
+    font-size: var(--unit);
+    background-color: var(--lightColor);
+}
+
+body{
+    font-family: Inter;
+    font-weight: 300;
+    line-height:var(--lineHeight);
+    color: var(--darkColor);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin-bottom: var(--lineHeight);
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+p{
+    font-size: 1rem;
+}
+
+ul{
+    padding-left: 1em;
+}
+li{
+    list-style-type:disc;
+    margin-bottom: 1em;
+}
+li li{
+    list-style-type: circle;
+}
+
+ul ul{
+    margin-bottom: 0;
+}
+a{
+    color: var(--secondaryColor);
+}
+a:hover, a:active{
+    color: var(--darkColor);
+}
+
+
+/*
+exemple d'une déclinaison du composant UL,
+basée sur l'utilisation d'une image à la place des puces standards
+*/
+
+ul.list-custom{
+    padding-left: 0em;
+}
+ul.list-custom li{
+    list-style-type: none;
+}
+
+ul.list-custom li::before{
+    content: '';
+    display: inline-block;
+    background-image: url('/assets/images/checkmark2.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1hem;
+    width: 1em;
+    margin-right: .5em;
+}

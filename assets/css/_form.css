@@ -1,0 +1,44 @@
+label {
+    display: block;
+}
+
+input:not([type="checkbox"]){
+    width: 100%;
+    padding: var(--unit);
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid var(--primaryColor);
+    transition: all .3s;
+}
+input:focus{
+    background-color: #fff;
+    border-color: var(--secondaryColor);
+    border-radius: 9px;
+    outline: none;
+}
+
+
+[type="checkbox"]+label {
+    display: inline;
+}
+
+form > div > label{
+    text-indent: -100%;
+    transition: all .3s
+}
+
+form > div:focus-within > label{
+    text-indent: 0;
+}
+
+
+
+#choice:checked ~ .form-1,
+#choice ~ .form-2{
+    display: none;
+}
+
+#choice ~ .form-1,
+#choice:checked ~ .form-2 {
+    display: block;
+}
